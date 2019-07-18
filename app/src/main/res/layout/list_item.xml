@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imageView_product"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/imageView_product"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2_nameproduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="TextView"
+        style="@style/textview"/>
+
+    <TextView
+        android:id="@+id/textView3_price"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/textView2_nameproduct"
+        android:text="TextView"
+        style="@style/textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button3_dcrease"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_bg"
+
+                android:shadowColor="#3F51B5"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/textview"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button4_increase"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:background="@drawable/button_bg"
+                android:text="+" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/button4_add_card"
+                android:background="@drawable/btn_bg"
+                android:layout_height="wrap_content"
+                android:text="Add Cart" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#B3B3B3"/>
+
+</LinearLayout>

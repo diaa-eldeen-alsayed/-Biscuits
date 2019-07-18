@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView_cart_product"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="200dp"
+        android:layout_toRightOf="@id/imageView_cart_product"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView2cart_nameproduct"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="TextView"
+            android:textColor="#741820"
+            android:textSize="16sp"
+            android:fontFamily="monospace" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button3_dcrease"
+                android:layout_width="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/button_bg"
+                android:layout_height="match_parent"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                style="@style/textview"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button4_increase"
+                android:layout_width="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/button_bg"
+                android:layout_height="match_parent"
+                android:text="+" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Toatal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/textview"
+            android:text="السعر الكلى" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/linear"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3cart_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/textview"
+            android:text="85 egp" />
+        <TextView
+            android:id="@+id/textView3total_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="300 Egp"
+            style="@style/textview"/>
+    </LinearLayout>
+        </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/parent"
+    android:background="#646464"/>
+</LinearLayout>
